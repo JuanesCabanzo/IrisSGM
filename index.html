@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistema de Gestión Médica — Autenticación Biométrica Simulada</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <h1>Iris<span>SGM</span></h1>
+        <p class="subtitle">Sistema de Gestión Médica — Autenticación Biométrica Simulada</p>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#descripcion">Descripción</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#requisitos">Requisitos</a>
+        <a href="#plan">Plan por semestres</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <section id="inicio" class="hero card">
+      <div class="hero-left">
+        <h2>Sistema de Gestión Médica con Autenticación Biométrica Simulada</h2>
+        <p class="lead">Aplicación web educativa para el registro y gestión de historiales clínicos que incorpora una simulación de autenticación biométrica mediante imagen del iris o rostro. Diseñada para desarrollarse progresivamente durante el tecnólogo.</p>
+        <a href="#descripcion" class="btn">Ver detalles del proyecto</a>
+      </div>
+      <div class="hero-right">
+        <img src="https://images.unsplash.com/photo-1586773860410-8b6b0f8d0a3d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4b5d1b6a5c0b0a4b3c9d2f2f4b6a8c1d" alt="Ilustración proyecto">
+      </div>
+    </section>
+
+    <section id="descripcion" class="card">
+      <h3>Descripción del proyecto</h3>
+      <p>El <strong>Sistema de Gestión Médica con Autenticación Biométrica Simulada</strong> es una plataforma web que permite el registro, almacenamiento y consulta de historiales médicos. En lugar de realizar análisis biomédicos o diagnósticos automáticos, el sistema guarda imágenes del iris o rostro como <em>identificador visual</em> (autenticación simulada) y ofrece mecanismos seguros de acceso por roles (paciente, médico, administrador).</p>
+
+      <p>El objetivo es construir una herramienta formativa y escalable que permita demostrar, en la sustentación y las entregas parciales, capacidades en diseño de bases de datos, desarrollo web, manejo de roles, seguridad básica y generación de reportes. En fases posteriores se podrá integrar reconocimiento biométrico real o módulos experimentales de visión por computador como extensión del proyecto.</p>
+    </section>
+
+    <section id="objetivos" class="card">
+      <h3>Objetivo general</h3>
+      <p>Desarrollar una aplicación web para la gestión de información clínica con autenticación biométrica simulada, que permita la administración de pacientes, la consulta de historiales y la generación de reportes básicos, asegurando control de accesos por roles.</p>
+
+      <h4>Objetivos específicos</h4>
+      <ul>
+        <li>Diseñar la estructura de base de datos para pacientes, usuarios y historiales.</li>
+        <li>Implementar autenticación con roles (paciente, médico, administrador).</li>
+        <li>Permitir el registro y almacenamiento de imágenes del iris o rostro como elemento de identificación visual.</li>
+        <li>Proveer interfaces para que médicos registren diagnósticos manuales y pacientes consulten su historial.</li>
+        <li>Generar reportes estadísticos simples sobre la actividad del sistema.</li>
+      </ul>
+    </section>
+
+    <section id="requisitos" class="card two-col">
+      <div>
+        <h3>Requisitos funcionales (resumen)</h3>
+        <ol>
+          <li>Registrar usuarios: pacientes, médicos y administradores.</li>
+          <li>Autenticación tradicional (usuario + contraseña) y visualización de imagen biométrica simulada.</li>
+          <li>Consulta y gestión de historiales clínicos.</li>
+          <li>Registro manual de diagnósticos y citas médicas por parte del médico.</li>
+          <li>Generación de reportes y estadísticas básicas.</li>
+          <li>Control de accesos y permisos según rol.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Requisitos no funcionales</h3>
+        <ul>
+          <li>Interfaz intuitiva y responsive.</li>
+          <li>Cifrado básico de credenciales.</li>
+          <li>Persistencia de datos en base de datos (MySQL) en fases posteriores.</li>
+          <li>Capacidad de ejecutarse en entorno local o servidor institucional.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="card">
+      <h3>Tecnologías propuestas</h3>
+      <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript.</p>
+      <p><strong>Backend (etapas posteriores):</strong> Java (NetBeans, Spring Boot) o Node.js.</p>
+      <p><strong>Base de datos:</strong> MySQL.</p>
+      <p><strong>Herramientas complementarias:</strong> Chart.js para gráficos, librerías de cifrado y utilidades para manejo de imágenes. Para demostraciones locales se puede usar <em>localStorage</em>.</p>
+    </section>
+
+    <section id="plan" class="card">
+      <h3>Plan de trabajo por semestres (sugerido)</h3>
+      <table class="plan-table">
+        <thead>
+          <tr><th>Semestre</th><th>Metas</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2°</td><td>Prototipo frontend informativo (HTML/CSS) + documento del proyecto y mockups.</td></tr>
+          <tr><td>3°</td><td>Base de datos y CRUD en backend (Java + MySQL). Registro y consulta de pacientes.</td></tr>
+          <tr><td>4°</td><td>Autenticación con roles, manejo de sesiones y paneles básicos para médico/paciente.</td></tr>
+          <tr><td>5°</td><td>Reportes, gráficas y exportación de datos; mejoras en seguridad y cifrado.</td></tr>
+          <tr><td>6°</td><td>Integración opcional de módulo experimental de visión por computador o preparación de la sustentación final.</td></tr>
+        </tbody>
+      </table>
+
+      <h4>Notas para la sustentación</h4>
+      <ul>
+        <li>Explicar claramente que la autenticación biométrica es <em>simulada</em> (imagen guardada y verificación de igualdad) para evitar obligaciones éticas y legales.</li>
+        <li>Documentar cada entrega: decisiones técnicas, código, pruebas y mejoras pendientes.</li>
+        <li>Mostrar roadmap de evolución y posibles integraciones (reconocimiento real, cumplimiento de normativas de salud).</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="card">
+      <h3>Contacto y créditos</h3>
+      <p>Proyecto: <strong>Sistema de Gestión Médica con Autenticación Biométrica Simulada</strong></p>
+      <p>Autor: <strong>Juan Esteban Cabanzo Ortiz</strong> — Tecnólogo en Desarrollo de Software</p>
+      <p>Correo de contacto: <a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a></p>
+      <p class="muted">Documento y prototipo orientado a uso académico y demostración. No es una herramienta clínica ni realiza diagnósticos médicos.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <small>© 2025 — Proyecto académico. Sistema de Gestión Médica con Autenticación Biométrica Simulada.</small>
+    </div>
+  </footer>
+</body>
+</html>
