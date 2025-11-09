@@ -12,121 +12,125 @@
   <header class="topbar">
     <div class="wrap">
       <div class="brand">
-        <h1>Iris<span>SGM</span></h1>
-        <p class="subtitle">Sistema de Gestión Médica — Autenticación Biométrica Simulada</p>
-      </div>
+  <img src="logo_iris.png" alt="Logo Iris SGM" class="logo">
+  <p class="subtitle">Sistema de Gestión Médica — Autenticación Biométrica Simulada</p>
+</div>
       <nav class="nav">
         <a href="#inicio">Inicio</a>
         <a href="#descripcion">Descripción</a>
         <a href="#objetivos">Objetivos</a>
-        <a href="#requisitos">Requisitos</a>
-        <a href="#plan">Plan por semestres</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#contacto">Autores</a>
       </nav>
     </div>
   </header>
 
+  <!-- HERO con fondo y texto centrado -->
+  <section id="inicio" class="hero-banner">
+    <div class="hero-content">
+      <h1>Sistema de Gestión Médica con Autenticación Biométrica Simulada</h1>
+      <p class="hero-description">
+        Una plataforma web que permite la gestión de historiales médicos mediante una autenticación biométrica simulada, utilizando imágenes del iris o rostro como elemento visual de identidad. <br>
+        Un proyecto educativo, moderno y escalable.
+      </p>
+    </div>
+    <a href="#descripcion" class="btn scroll-btn">Conocer más</a>
+  </section>
+
   <main class="wrap main">
-    <section id="inicio" class="hero card">
-      <div class="hero-left">
-        <h2>Sistema de Gestión Médica con Autenticación Biométrica Simulada</h2>
-        <p class="lead">Aplicación web educativa para el registro y gestión de historiales clínicos que incorpora una simulación de autenticación biométrica mediante imagen del iris o rostro. Diseñada para desarrollarse progresivamente durante el tecnólogo.</p>
-        <a href="#descripcion" class="btn">Ver detalles del proyecto</a>
-      </div>
-      <div class="hero-right">
-        <img src="https://images.unsplash.com/photo-1586773860410-8b6b0f8d0a3d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4b5d1b6a5c0b0a4b3c9d2f2f4b6a8c1d" alt="Ilustración proyecto">
-      </div>
-    </section>
-
-    <section id="descripcion" class="card">
+    <section id="descripcion" class="card fade-in">
       <h3>Descripción del proyecto</h3>
-      <p>El <strong>Sistema de Gestión Médica con Autenticación Biométrica Simulada</strong> es una plataforma web que permite el registro, almacenamiento y consulta de historiales médicos. En lugar de realizar análisis biomédicos o diagnósticos automáticos, el sistema guarda imágenes del iris o rostro como <em>identificador visual</em> (autenticación simulada) y ofrece mecanismos seguros de acceso por roles (paciente, médico, administrador).</p>
+      <p>El <strong>Sistema de Gestión Médica con Autenticación Biométrica Simulada</strong> es una plataforma web enfocada en la administración y consulta de historiales clínicos, incorporando una simulación de autenticación biométrica por medio de imágenes del iris o rostro. Este sistema no realiza diagnósticos médicos, sino que emplea las imágenes como un identificador visual simbólico para representar cómo funcionaría un entorno biométrico seguro.</p>
 
-      <p>El objetivo es construir una herramienta formativa y escalable que permita demostrar, en la sustentación y las entregas parciales, capacidades en diseño de bases de datos, desarrollo web, manejo de roles, seguridad básica y generación de reportes. En fases posteriores se podrá integrar reconocimiento biométrico real o módulos experimentales de visión por computador como extensión del proyecto.</p>
+      <p>El propósito del proyecto es aplicar conocimientos en bases de datos, interfaces web, control de roles y seguridad informática, creando un producto académico funcional que pueda evolucionar hacia un sistema biométrico real en futuras etapas.</p>
     </section>
 
-    <section id="objetivos" class="card">
+    <section id="objetivos" class="card fade-in">
       <h3>Objetivo general</h3>
-      <p>Desarrollar una aplicación web para la gestión de información clínica con autenticación biométrica simulada, que permita la administración de pacientes, la consulta de historiales y la generación de reportes básicos, asegurando control de accesos por roles.</p>
+      <p>Desarrollar un sistema web para la gestión médica con autenticación biométrica simulada, que permita administrar la información de pacientes, historiales clínicos y roles de usuario, promoviendo buenas prácticas de seguridad y diseño de software.</p>
 
       <h4>Objetivos específicos</h4>
       <ul>
-        <li>Diseñar la estructura de base de datos para pacientes, usuarios y historiales.</li>
-        <li>Implementar autenticación con roles (paciente, médico, administrador).</li>
-        <li>Permitir el registro y almacenamiento de imágenes del iris o rostro como elemento de identificación visual.</li>
-        <li>Proveer interfaces para que médicos registren diagnósticos manuales y pacientes consulten su historial.</li>
-        <li>Generar reportes estadísticos simples sobre la actividad del sistema.</li>
+        <li>Diseñar una base de datos que permita almacenar pacientes, médicos y sus historiales clínicos.</li>
+        <li>Simular la autenticación biométrica mediante imágenes de iris o rostro.</li>
+        <li>Implementar control de acceso con roles y privilegios.</li>
+        <li>Facilitar la generación y consulta de historiales médicos.</li>
+        <li>Garantizar la privacidad y seguridad básica de los datos.</li>
       </ul>
     </section>
 
-    <section id="requisitos" class="card two-col">
-      <div>
-        <h3>Requisitos funcionales (resumen)</h3>
-        <ol>
-          <li>Registrar usuarios: pacientes, médicos y administradores.</li>
-          <li>Autenticación tradicional (usuario + contraseña) y visualización de imagen biométrica simulada.</li>
-          <li>Consulta y gestión de historiales clínicos.</li>
-          <li>Registro manual de diagnósticos y citas médicas por parte del médico.</li>
-          <li>Generación de reportes y estadísticas básicas.</li>
-          <li>Control de accesos y permisos según rol.</li>
-        </ol>
+    <section id="caracteristicas" class="card fade-in">
+      <h3>Características principales</h3>
+      <div class="grid">
+        <div class="feature">
+          <h4>Gestión integral</h4>
+          <p>Registro y administración de pacientes, médicos y administradores con información personal segura y centralizada.</p>
+        </div>
+        <div class="feature">
+          <h4>Autenticación simulada</h4>
+          <p>Uso de imágenes biométricas simuladas como parte del proceso de inicio de sesión y verificación de identidad.</p>
+        </div>
+        <div class="feature">
+          <h4>Interfaz moderna</h4>
+          <p>Diseño adaptable, interactivo y enfocado en la experiencia del usuario, compatible con múltiples dispositivos.</p>
+        </div>
+        <div class="feature">
+          <h4>Escalabilidad</h4>
+          <p>Estructura lista para integrar módulos futuros, como inteligencia artificial o reconocimiento real de patrones visuales.</p>
+        </div>
       </div>
-      <div>
-        <h3>Requisitos no funcionales</h3>
-        <ul>
-          <li>Interfaz intuitiva y responsive.</li>
-          <li>Cifrado básico de credenciales.</li>
-          <li>Persistencia de datos en base de datos (MySQL) en fases posteriores.</li>
-          <li>Capacidad de ejecutarse en entorno local o servidor institucional.</li>
-        </ul>
+    </section>
+
+    <section id="impacto" class="card fade-in">
+      <h3>Impacto y proyección</h3>
+      <p>Este proyecto busca ser una base sólida para el aprendizaje y desarrollo de sistemas con enfoque en seguridad y gestión de datos médicos. Además, su diseño modular y su estructura escalable permiten que en el futuro se integren tecnologías más avanzadas, como reconocimiento de patrones y análisis de imágenes, aplicables tanto al sector salud como a otros ámbitos biométricos.</p>
+
+      <p>El impacto principal radica en su contribución al proceso formativo de los tecnólogos, brindando una experiencia práctica de desarrollo con propósito social y aplicabilidad real.</p>
+    </section>
+
+    <section id="contacto" class="card fade-in">
+  <h3>Autores del proyecto</h3>
+  <div class="authors">
+    <div class="author-card">
+      <img src="autor_juan.jpg" alt="Juan Esteban Cabanzo Ortiz">
+      <h4>Juan Esteban Cabanzo Ortiz</h4>
+      <p>Tecnólogo en Desarrollo de Software</p>
+      <div class="email-box">
+        <a href="mailto:jecabanzoo@academia.usbbog.edu.co">jecabanzoo@academia.usbbog.edu.co</a>
       </div>
-    </section>
-
-    <section id="tecnologias" class="card">
-      <h3>Tecnologías propuestas</h3>
-      <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript.</p>
-      <p><strong>Backend (etapas posteriores):</strong> Java (NetBeans, Spring Boot) o Node.js.</p>
-      <p><strong>Base de datos:</strong> MySQL.</p>
-      <p><strong>Herramientas complementarias:</strong> Chart.js para gráficos, librerías de cifrado y utilidades para manejo de imágenes. Para demostraciones locales se puede usar <em>localStorage</em>.</p>
-    </section>
-
-    <section id="plan" class="card">
-      <h3>Plan de trabajo por semestres (sugerido)</h3>
-      <table class="plan-table">
-        <thead>
-          <tr><th>Semestre</th><th>Metas</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>2°</td><td>Prototipo frontend informativo (HTML/CSS) + documento del proyecto y mockups.</td></tr>
-          <tr><td>3°</td><td>Base de datos y CRUD en backend (Java + MySQL). Registro y consulta de pacientes.</td></tr>
-          <tr><td>4°</td><td>Autenticación con roles, manejo de sesiones y paneles básicos para médico/paciente.</td></tr>
-          <tr><td>5°</td><td>Reportes, gráficas y exportación de datos; mejoras en seguridad y cifrado.</td></tr>
-          <tr><td>6°</td><td>Integración opcional de módulo experimental de visión por computador o preparación de la sustentación final.</td></tr>
-        </tbody>
-      </table>
-
-      <h4>Notas para la sustentación</h4>
-      <ul>
-        <li>Explicar claramente que la autenticación biométrica es <em>simulada</em> (imagen guardada y verificación de igualdad) para evitar obligaciones éticas y legales.</li>
-        <li>Documentar cada entrega: decisiones técnicas, código, pruebas y mejoras pendientes.</li>
-        <li>Mostrar roadmap de evolución y posibles integraciones (reconocimiento real, cumplimiento de normativas de salud).</li>
-      </ul>
-    </section>
-
-    <section id="contacto" class="card">
-      <h3>Contacto y créditos</h3>
-      <p>Proyecto: <strong>Sistema de Gestión Médica con Autenticación Biométrica Simulada</strong></p>
-      <p>Autor: <strong>Juan Esteban Cabanzo Ortiz</strong> — Tecnólogo en Desarrollo de Software</p>
-      <p>Correo de contacto: <a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a></p>
-      <p class="muted">Documento y prototipo orientado a uso académico y demostración. No es una herramienta clínica ni realiza diagnósticos médicos.</p>
-    </section>
-
+    </div>
+    <div class="author-card">
+      <img src="autor_julian.jpg" alt="Julian Camilo Pérez Sogamoso">
+      <h4>Julian Camilo Pérez Sogamoso</h4>
+      <p>Tecnólogo en Desarrollo de Software</p>
+      <div class="email-box">
+        <a href="mailto:jcperezs1@academia.usbbog.edu.co">jcperezs1@academia.usbbog.edu.co</a>
+      </div>
+    </div>
+  </div>
+  <p class="muted">Proyecto académico — Universidad de San Buenaventura Bogotá</p>
+</section>
   </main>
 
   <footer class="footer">
     <div class="wrap">
-      <small>© 2025 — Proyecto académico. Sistema de Gestión Médica con Autenticación Biométrica Simulada.</small>
+      <small>© Proyecto académico: Sistema de Gestión Médica con Autenticación Biométrica Simulada.</small>
     </div>
   </footer>
+
+  <script>
+    // Scroll suave para todos los enlaces del menú y el botón
+    document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+      enlace.addEventListener('click', function(e) {
+        e.preventDefault();
+        const destino = document.querySelector(this.getAttribute('href'));
+        if (destino) {
+          destino.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
+
