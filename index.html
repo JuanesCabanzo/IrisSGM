@@ -4,113 +4,156 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sistema de Gestión Médica — Autenticación Biométrica Simulada</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap">
-      <div class="brand">
-  <img src="logo_iris.png" alt="Logo Iris SGM" class="logo">
-  <p class="subtitle">Sistema de Gestión Médica — Autenticación Biométrica Simulada</p>
-</div>
-      <nav class="nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#descripcion">Descripción</a>
-        <a href="#objetivos">Objetivos</a>
-        <a href="#caracteristicas">Características</a>
-        <a href="#impacto">Impacto</a>
-        <a href="#contacto">Autores</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO con fondo y texto centrado -->
+<header class="topbar">
+  <div class="wrap header-flex">
+    <img src="logo_iris.png" alt="Logo Iris SGM" class="logo">
+    <p class="subtitle" data-es="Sistema de Gestión Médica — Autenticación Biométrica Simulada" data-en="Medical Management System — Simulated Biometric Authentication">
+      Sistema de Gestión Médica — Autenticación Biométrica Simulada
+    </p>
+    <nav class="nav">
+      <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="#descripcion" data-es="Descripción" data-en="Description">Descripción</a>
+      <a href="#objetivos" data-es="Objetivos" data-en="Objectives">Objetivos</a>
+      <a href="#caracteristicas" data-es="Características" data-en="Features">Características</a>
+      <a href="#impacto" data-es="Impacto" data-en="Impact & Projection">Impacto</a>
+      <a href="#contacto" data-es="Autores" data-en="Authors">Autores</a>
+      <button id="translateBtn" class="btn">English</button>
+    </nav>
+  </div>
+</header>
   <section id="inicio" class="hero-banner">
     <div class="hero-content">
-      <h1>Sistema de Gestión Médica con Autenticación Biométrica Simulada</h1>
-      <p class="hero-description">
-        Una plataforma web que permite la gestión de historiales médicos mediante una autenticación biométrica simulada, utilizando imágenes del iris o rostro como elemento visual de identidad. <br>
-        Un proyecto educativo, moderno y escalable.
+      <h1 data-es="Sistema de Gestión Médica con Autenticación Biométrica Simulada"
+          data-en="Medical Management System with Simulated Biometric Authentication">
+        Sistema de Gestión Médica con Autenticación Biométrica Simulada
+      </h1>
+      <p class="hero-description"
+         data-es="Una plataforma web que permite la gestión de historiales médicos mediante una autenticación biométrica simulada, utilizando imágenes del iris o rostro como elemento visual de identidad. Un proyecto educativo, moderno y escalable."
+         data-en="A web platform that allows management of medical records using simulated biometric authentication, utilizing iris or face images as a visual identity element. An educational, modern, and scalable project.">
+        Una plataforma web que permite la gestión de historiales médicos mediante una autenticación biométrica simulada, utilizando imágenes del iris o rostro como elemento visual de identidad. Un proyecto educativo, moderno y escalable.
       </p>
     </div>
-    <a href="#descripcion" class="btn scroll-btn">Conocer más</a>
+    <a href="#descripcion" class="btn scroll-btn" data-es="Conocer más" data-en="Learn More">Conocer más</a>
   </section>
 
   <main class="wrap main">
     <section id="descripcion" class="card fade-in">
-      <h3>Descripción del proyecto</h3>
-      <p>El <strong>Sistema de Gestión Médica con Autenticación Biométrica Simulada</strong> es una plataforma web enfocada en la administración y consulta de historiales clínicos, incorporando una simulación de autenticación biométrica por medio de imágenes del iris o rostro. Este sistema no realiza diagnósticos médicos, sino que emplea las imágenes como un identificador visual simbólico para representar cómo funcionaría un entorno biométrico seguro.</p>
-
-      <p>El propósito del proyecto es aplicar conocimientos en bases de datos, interfaces web, control de roles y seguridad informática, creando un producto académico funcional que pueda evolucionar hacia un sistema biométrico real en futuras etapas.</p>
+      <h3 data-es="Descripción del proyecto" data-en="Project Description">Descripción del proyecto</h3>
+      <p data-es="El Sistema de Gestión Médica con Autenticación Biométrica Simulada es una plataforma web enfocada en la administración y consulta de historiales clínicos, incorporando una simulación de autenticación biométrica por medio de imágenes del iris o rostro. Este sistema no realiza diagnósticos médicos, sino que emplea las imágenes como un identificador visual simbólico para representar cómo funcionaría un entorno biométrico seguro."
+         data-en="The Medical Management System with Simulated Biometric Authentication is a web platform focused on the administration and consultation of medical records, incorporating a simulated biometric authentication using iris or face images. This system does not perform medical diagnoses, but uses the images as a symbolic visual identifier to represent how a secure biometric environment would function.">
+        El Sistema de Gestión Médica con Autenticación Biométrica Simulada es una plataforma web enfocada en la administración y consulta de historiales clínicos, incorporando una simulación de autenticación biométrica por medio de imágenes del iris o rostro. Este sistema no realiza diagnósticos médicos, sino que emplea las imágenes como un identificador visual simbólico para representar cómo funcionaría un entorno biométrico seguro.
+      </p>
+      <p data-es="El propósito del proyecto es aplicar conocimientos en bases de datos, interfaces web, control de roles y seguridad informática, creando un producto académico funcional que pueda evolucionar hacia un sistema biométrico real en futuras etapas."
+         data-en="The purpose of the project is to apply knowledge in databases, web interfaces, role control, and IT security, creating a functional academic product that can evolve into a real biometric system in future stages.">
+        El propósito del proyecto es aplicar conocimientos en bases de datos, interfaces web, control de roles y seguridad informática, creando un producto académico funcional que pueda evolucionar hacia un sistema biométrico real en futuras etapas.
+      </p>
     </section>
 
     <section id="objetivos" class="card fade-in">
-      <h3>Objetivo general</h3>
-      <p>Desarrollar un sistema web para la gestión médica con autenticación biométrica simulada, que permita administrar la información de pacientes, historiales clínicos y roles de usuario, promoviendo buenas prácticas de seguridad y diseño de software.</p>
+      <h3 data-es="Objetivo general" data-en="General Objective">Objetivo general</h3>
+      <p data-es="Desarrollar un sistema web para la gestión médica con autenticación biométrica simulada, que permita administrar la información de pacientes, historiales clínicos y roles de usuario, promoviendo buenas prácticas de seguridad y diseño de software."
+         data-en="Develop a web system for medical management with simulated biometric authentication, allowing management of patient information, medical records, and user roles, promoting good security and software design practices.">
+        Desarrollar un sistema web para la gestión médica con autenticación biométrica simulada, que permita administrar la información de pacientes, historiales clínicos y roles de usuario, promoviendo buenas prácticas de seguridad y diseño de software.
+      </p>
 
-      <h4>Objetivos específicos</h4>
+      <h4 data-es="Objetivos específicos" data-en="Specific Objectives">Objetivos específicos</h4>
       <ul>
-        <li>Diseñar una base de datos que permita almacenar pacientes, médicos y sus historiales clínicos.</li>
-        <li>Simular la autenticación biométrica mediante imágenes de iris o rostro.</li>
-        <li>Implementar control de acceso con roles y privilegios.</li>
-        <li>Facilitar la generación y consulta de historiales médicos.</li>
-        <li>Garantizar la privacidad y seguridad básica de los datos.</li>
+        <li data-es="Diseñar una base de datos que permita almacenar pacientes, médicos y sus historiales clínicos."
+            data-en="Design a database to store patients, doctors, and their medical records.">
+          Diseñar una base de datos que permita almacenar pacientes, médicos y sus historiales clínicos.
+        </li>
+        <li data-es="Simular la autenticación biométrica mediante imágenes de iris o rostro."
+            data-en="Simulate biometric authentication using iris or face images.">
+          Simular la autenticación biométrica mediante imágenes de iris o rostro.
+        </li>
+        <li data-es="Implementar control de acceso con roles y privilegios."
+            data-en="Implement access control with roles and privileges.">
+          Implementar control de acceso con roles y privilegios.
+        </li>
+        <li data-es="Facilitar la generación y consulta de historiales médicos."
+            data-en="Facilitate the generation and consultation of medical records.">
+          Facilitar la generación y consulta de historiales médicos.
+        </li>
+        <li data-es="Garantizar la privacidad y seguridad básica de los datos."
+            data-en="Ensure basic data privacy and security.">
+          Garantizar la privacidad y seguridad básica de los datos.
+        </li>
       </ul>
     </section>
 
     <section id="caracteristicas" class="card fade-in">
-      <h3>Características principales</h3>
+      <h3 data-es="Características principales" data-en="Main Features">Características principales</h3>
       <div class="grid">
         <div class="feature">
-          <h4>Gestión integral</h4>
-          <p>Registro y administración de pacientes, médicos y administradores con información personal segura y centralizada.</p>
+          <h4 data-es="Gestión integral" data-en="Comprehensive Management">Gestión integral</h4>
+          <p data-es="Registro y administración de pacientes, médicos y administradores con información personal segura y centralizada."
+             data-en="Registration and management of patients, doctors, and administrators with secure, centralized personal information.">
+            Registro y administración de pacientes, médicos y administradores con información personal segura y centralizada.
+          </p>
         </div>
         <div class="feature">
-          <h4>Autenticación simulada</h4>
-          <p>Uso de imágenes biométricas simuladas como parte del proceso de inicio de sesión y verificación de identidad.</p>
+          <h4 data-es="Autenticación simulada" data-en="Simulated Authentication">Autenticación simulada</h4>
+          <p data-es="Uso de imágenes biométricas simuladas como parte del proceso de inicio de sesión y verificación de identidad."
+             data-en="Use of simulated biometric images as part of the login process and identity verification.">
+            Uso de imágenes biométricas simuladas como parte del proceso de inicio de sesión y verificación de identidad.
+          </p>
         </div>
         <div class="feature">
-          <h4>Interfaz moderna</h4>
-          <p>Diseño adaptable, interactivo y enfocado en la experiencia del usuario, compatible con múltiples dispositivos.</p>
+          <h4 data-es="Interfaz moderna" data-en="Modern Interface">Interfaz moderna</h4>
+          <p data-es="Diseño adaptable, interactivo y enfocado en la experiencia del usuario, compatible con múltiples dispositivos."
+             data-en="Adaptive, interactive design focused on user experience, compatible with multiple devices.">
+            Diseño adaptable, interactivo y enfocado en la experiencia del usuario, compatible con múltiples dispositivos.
+          </p>
         </div>
         <div class="feature">
-          <h4>Escalabilidad</h4>
-          <p>Estructura lista para integrar módulos futuros, como inteligencia artificial o reconocimiento real de patrones visuales.</p>
+          <h4 data-es="Escalabilidad" data-en="Scalability">Escalabilidad</h4>
+          <p data-es="Estructura lista para integrar módulos futuros, como inteligencia artificial o reconocimiento real de patrones visuales."
+             data-en="Structure ready to integrate future modules, such as AI or real visual pattern recognition.">
+            Estructura lista para integrar módulos futuros, como inteligencia artificial o reconocimiento real de patrones visuales.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="impacto" class="card fade-in">
-      <h3>Impacto y proyección</h3>
-      <p>Este proyecto busca ser una base sólida para el aprendizaje y desarrollo de sistemas con enfoque en seguridad y gestión de datos médicos. Además, su diseño modular y su estructura escalable permiten que en el futuro se integren tecnologías más avanzadas, como reconocimiento de patrones y análisis de imágenes, aplicables tanto al sector salud como a otros ámbitos biométricos.</p>
-
-      <p>El impacto principal radica en su contribución al proceso formativo de los tecnólogos, brindando una experiencia práctica de desarrollo con propósito social y aplicabilidad real.</p>
+      <h3 data-es="Impacto y proyección" data-en="Impact & Projection">Impacto y proyección</h3>
+      <p data-es="Este proyecto busca ser una base sólida para el aprendizaje y desarrollo de sistemas con enfoque en seguridad y gestión de datos médicos. Además, su diseño modular y su estructura escalable permiten que en el futuro se integren tecnologías más avanzadas, como reconocimiento de patrones y análisis de imágenes, aplicables tanto al sector salud como a otros ámbitos biométricos."
+         data-en="This project aims to be a solid foundation for learning and developing systems focused on security and medical data management. Its modular design and scalable structure allow for integration of more advanced technologies in the future, such as pattern recognition and image analysis, applicable to both healthcare and other biometric fields.">
+        Este proyecto busca ser una base sólida para el aprendizaje y desarrollo de sistemas con enfoque en seguridad y gestión de datos médicos. Además, su diseño modular y su estructura escalable permiten que en el futuro se integren tecnologías más avanzadas, como reconocimiento de patrones y análisis de imágenes, aplicables tanto al sector salud como a otros ámbitos biométricos.
+      </p>
+      <p data-es="El impacto principal radica en su contribución al proceso formativo de los tecnólogos, brindando una experiencia práctica de desarrollo con propósito social y aplicabilidad real."
+         data-en="The main impact lies in its contribution to the training of technologists, providing practical development experience with social purpose and real applicability.">
+        El impacto principal radica en su contribución al proceso formativo de los tecnólogos, brindando una experiencia práctica de desarrollo con propósito social y aplicabilidad real.
+      </p>
     </section>
 
     <section id="contacto" class="card fade-in">
-  <h3>Autores del proyecto</h3>
-  <div class="authors">
-    <div class="author-card">
-      <img src="autor_juan.jpg" alt="Juan Esteban Cabanzo Ortiz">
-      <h4>Juan Esteban Cabanzo Ortiz</h4>
-      <p>Tecnólogo en Desarrollo de Software</p>
-      <div class="email-box">
-        <a href="mailto:jecabanzoo@academia.usbbog.edu.co">jecabanzoo@academia.usbbog.edu.co</a>
+      <h3 data-es="Autores del proyecto" data-en="Project Authors">Autores del proyecto</h3>
+      <div class="authors">
+        <div class="author-card">
+          <img src="autor_juan.jpg" alt="Juan Esteban Cabanzo Ortiz">
+          <h4>Juan Esteban Cabanzo Ortiz</h4>
+          <p data-es="Tecnólogo en Desarrollo de Software" data-en="Software Development Technologist">Tecnólogo en Desarrollo de Software</p>
+          <div class="email-box">
+            <a href="mailto:jecabanzoo@academia.usbbog.edu.co">jecabanzoo@academia.usbbog.edu.co</a>
+          </div>
+        </div>
+        <div class="author-card">
+          <img src="autor_julian.jpg" alt="Julian Camilo Pérez Sogamoso">
+          <h4>Julian Camilo Pérez Sogamoso</h4>
+          <p data-es="Tecnólogo en Desarrollo de Software" data-en="Software Development Technologist">Tecnólogo en Desarrollo de Software</p>
+          <div class="email-box">
+            <a href="mailto:jcperezs1@academia.usbbog.edu.co">jcperezs1@academia.usbbog.edu.co</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="author-card">
-      <img src="autor_julian.jpg" alt="Julian Camilo Pérez Sogamoso">
-      <h4>Julian Camilo Pérez Sogamoso</h4>
-      <p>Tecnólogo en Desarrollo de Software</p>
-      <div class="email-box">
-        <a href="mailto:jcperezs1@academia.usbbog.edu.co">jcperezs1@academia.usbbog.edu.co</a>
-      </div>
-    </div>
-  </div>
-  <p class="muted">Proyecto académico — Universidad de San Buenaventura Bogotá</p>
-</section>
+      <p class="muted" data-es="Proyecto académico — Universidad de San Buenaventura Bogotá"
+         data-en="Academic Project — Universidad de San Buenaventura Bogotá">Proyecto académico — Universidad de San Buenaventura Bogotá</p>
+    </section>
   </main>
 
   <footer class="footer">
@@ -120,7 +163,7 @@
   </footer>
 
   <script>
-    // Scroll suave para todos los enlaces del menú y el botón
+    // Scroll suave
     document.querySelectorAll('a[href^="#"]').forEach(enlace => {
       enlace.addEventListener('click', function(e) {
         e.preventDefault();
@@ -130,7 +173,17 @@
         }
       });
     });
+
+    // Traducción español <-> inglés
+    const translateBtn = document.getElementById('translateBtn');
+    let en = false;
+    translateBtn.addEventListener('click', () => {
+      document.querySelectorAll('[data-es]').forEach(el => {
+        el.textContent = en ? el.dataset.es : el.dataset.en;
+      });
+      translateBtn.textContent = en ? 'English' : 'Español';
+      en = !en;
+    });
   </script>
 </body>
 </html>
-

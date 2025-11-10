@@ -20,38 +20,42 @@ body{
   color:#fff;
   box-shadow:0 4px 10px rgba(0,0,0,0.15);
 }
-.topbar .wrap{
+
+.topbar .wrap.header-flex{
   max-width:var(--maxw);
   margin:0 auto;
   padding:15px 25px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-}
-.brand {
   display: flex;
   align-items: center;
-  gap: 12px; /* separa el logo del texto */
+  justify-content: space-between; /* distribuye logo/subtitulo a la izquierda y menu a la derecha */
+  flex-wrap: nowrap; /* evita dividir en varias filas */
+  gap: 20px;
 }
 
-.brand .logo {
-  width: 55px; /* ajusta el tamaño del logo */
+/* Logo */
+.header-flex .logo {
+  width: 55px;
   height: auto;
 }
 
-.subtitle {
+/* Subtítulo */
+.header-flex .subtitle {
   font-size: 13px;
-  opacity: 0.9;
-  margin: 0;
   color: #ffffff;
+  margin: 0 20px 0 10px; /* espacio entre logo y subtítulo */
+  white-space: nowrap; /* evita que el texto se divida */
 }
 
-/* NAVBAR LINKS CON ANIMACIÓN */
+/* NAVBAR LINKS */
+.nav{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
 .nav a{
   color:#fff;
   text-decoration:none;
-  margin-left:16px;
   font-weight:500;
   position:relative;
   transition:all .25s ease;
@@ -74,7 +78,25 @@ body{
   width:100%;
 }
 
-/* HERO centrado ajustado */
+/* BOTÓN DE TRADUCCIÓN */
+#translateBtn {
+  background: #1565c0;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#translateBtn:hover{
+  background:#0d47a1;
+  transform:scale(1.05);
+}
+
+/* HERO centrado */
 .hero-banner{
   background:linear-gradient(rgba(0, 23, 46, 0.3), rgba(0, 23, 46, 0.85)),
   url(fondo_banner.avif) no-repeat center center/cover;
@@ -88,7 +110,7 @@ body{
   min-height:88vh;
 }
 .hero-content{
-  transform:translateY(-40px); /* sube el texto sin mover el botón */
+  transform:translateY(-40px);
 }
 .hero-banner h1{
   font-size:2.6rem;
@@ -106,7 +128,7 @@ body{
 }
 .hero-banner .btn{
   margin-top:30px;
-  background:#1565c0; /* azul oscuro bonito */
+  background:#1565c0;
   color:#fff;
   padding:14px 32px;
   border-radius:8px;
@@ -116,7 +138,7 @@ body{
   transition:all .3s ease;
 }
 .hero-banner .btn:hover{
-  background:#0d47a1; /* tono aún más oscuro al pasar el mouse */
+  background:#0d47a1;
   transform:scale(1.05);
 }
 
@@ -220,4 +242,12 @@ ul{margin-left:20px}
   .hero-banner h1{font-size:2rem}
   .hero-description{font-size:1rem;padding:0 10px}
   .author-card{width:90%}
+  .header-flex{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
